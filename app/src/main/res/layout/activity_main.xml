@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/header"
+        android:id="@+id/header"
+        android:layout_centerHorizontal="true"
+        style="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="64dp"
+                android:text="@string/title_streamer"
+                android:id="@+id/btn_streamer_app"
+                android:background="@color/btn_normal"
+                android:onClick="streamerClicked" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="64dp"
+                android:text="@string/title_scores"
+                android:id="@+id/btn_scores_app"
+                android:background="@color/btn_normal"
+                android:onClick="scoresClicked" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="64dp"
+                android:text="@string/title_library"
+                android:id="@+id/btn_library_app"
+                android:background="@color/btn_normal"
+                android:onClick="libraryClicked" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="64dp"
+                android:text="@string/title_bigger"
+                android:id="@+id/btn_bigger_app"
+                android:background="@color/btn_normal"
+                android:onClick="biggerClicked" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="64dp"
+                android:text="@string/title_reader"
+                android:id="@+id/btn_reader_app"
+                android:background="@color/btn_normal"
+                android:onClick="readerClicked" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="64dp"
+                android:text="@string/title_capstone"
+                android:id="@+id/btn_capstone_app"
+                android:background="@color/btn_capstone"
+                android:onClick="capstoneClicked" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
