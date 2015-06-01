@@ -41,7 +41,7 @@
                 android:text="@string/title_streamer"
                 android:id="@+id/btn_streamer_app"
                 android:background="@color/btn_normal"
-                android:onClick="streamerClicked" />
+                android:onClick="displayToast" />
 
             <Button
                 android:layout_width="match_parent"
@@ -53,7 +53,7 @@
                 android:text="@string/title_scores"
                 android:id="@+id/btn_scores_app"
                 android:background="@color/btn_normal"
-                android:onClick="scoresClicked" />
+                android:onClick="displayToast" />
 
             <Button
                 android:layout_width="match_parent"
@@ -65,7 +65,7 @@
                 android:text="@string/title_library"
                 android:id="@+id/btn_library_app"
                 android:background="@color/btn_normal"
-                android:onClick="libraryClicked" />
+                android:onClick="displayToast" />
 
             <Button
                 android:layout_width="match_parent"
@@ -77,7 +77,7 @@
                 android:text="@string/title_bigger"
                 android:id="@+id/btn_bigger_app"
                 android:background="@color/btn_normal"
-                android:onClick="biggerClicked" />
+                android:onClick="displayToast" />
 
             <Button
                 android:layout_width="match_parent"
@@ -89,7 +89,7 @@
                 android:text="@string/title_reader"
                 android:id="@+id/btn_reader_app"
                 android:background="@color/btn_normal"
-                android:onClick="readerClicked" />
+                android:onClick="displayToast" />
 
             <Button
                 android:layout_width="match_parent"
@@ -101,7 +101,7 @@
                 android:text="@string/title_capstone"
                 android:id="@+id/btn_capstone_app"
                 android:background="@color/btn_capstone"
-                android:onClick="capstoneClicked" />
+                android:onClick="displayToast" />
 
         </LinearLayout>
     </ScrollView>

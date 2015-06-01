@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 
@@ -38,33 +39,14 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void streamerClicked(View view) {
-        launchToast(getResources().getString(R.string.title_streamer));
-    }
+    public void displayToast(View view) {
 
-    public void scoresClicked(View view) {
-        launchToast(getResources().getString(R.string.title_scores));
-    }
+        Button button = (Button) view;
+        String appName = (String) button.getText();
 
-    public void libraryClicked(View view) {
-        launchToast(getResources().getString(R.string.title_library));
-    }
-
-    public void biggerClicked(View view) {
-        launchToast(getResources().getString(R.string.title_bigger));
-    }
-
-    public void readerClicked(View view) {
-        launchToast(getResources().getString(R.string.title_reader));
-    }
-
-    public void capstoneClicked(View view) {
-        launchToast(getResources().getString(R.string.title_capstone));
-    }
-
-    public void launchToast(String appName) {
         Toast.makeText(this, "This button will launch " + appName + "!", Toast.LENGTH_SHORT).show();
     }
+
 }
 
 
